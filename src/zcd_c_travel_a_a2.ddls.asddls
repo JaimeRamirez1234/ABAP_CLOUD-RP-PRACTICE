@@ -24,7 +24,7 @@ as projection on ZCD_I_TRAVEL_ALFA02
     LastChangedAt,
     /* Associations */
     _Agency,
-    _Booking,
+    _Booking : redirected to composition child zcd_c_booking_a_a2,
     _Currency,
     _Customer
 }
