@@ -1,8 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Travel'
 @Metadata.ignorePropagatedAnnotations: true
-@Metadata.allowExtensions: true
-define root view entity ZCD_C_TRAVEL_P_A2 
+define root view entity ZCD_C_TRAVEL_A_A2
 as projection on ZCD_I_TRAVEL_ALFA02
 {
     key TravelId,
@@ -24,7 +23,8 @@ as projection on ZCD_I_TRAVEL_ALFA02
     LastChangedBy,
     LastChangedAt,
     /* Associations */
-    _Booking : redirected to composition child ZCD_C_BOOKING_P_A2,
     _Agency,
+    _Booking,
+    _Currency,
     _Customer
 }

@@ -1,0 +1,23 @@
+@Metadata.layer: #CORE
+@Search.searchable: true
+@UI: {
+    headerInfo: { typeName: 'Travel', typeNamePlural: 'Travels', title: { type: #STANDARD, value: 'TravelID' } }
+     }
+annotate entity ZCD_C_TRAVEL_P_A2
+    with 
+{
+    @UI.facet: [{ id: 'Travel', purpose: #STANDARD,
+                  type: #IDENTIFICATION_REFERENCE,
+                 label : 'Travle',
+               position: 10},
+                { id: 'Bookind',
+                  purpose: #STANDARD,
+                  type: #LINEITEM_REFERENCE,
+                  label: 'Booking',
+                  position: 20,
+                  targetElement: '_Booking' }]
+    @UI: { lineItem: [{ position: 10, importance: #HIGH }],
+                        identification: [{ position: 10, label: 'Travel ID[1,...,99999999]' }] }
+    @Search.defaultSearchElement: true
+    TravelId;
+}
