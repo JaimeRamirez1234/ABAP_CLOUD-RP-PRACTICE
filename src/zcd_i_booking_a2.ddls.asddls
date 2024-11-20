@@ -1,6 +1,5 @@
 @AbapCatalog.sqlViewName: 'ZVW_I_BOOKING_A2'
 @AbapCatalog.compiler.compareFilter: true
-@AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Booking View'
 @Metadata.ignorePropagatedAnnotations: true
