@@ -20,6 +20,7 @@ define view ZCD_I_BOOKSUPPL_ALFA02 as select from ztb_booksuppl_a2 as BookingSup
         price as Price,
         @Semantics.currencyCode: true
         currency_code as CurrencyCode,
+        last_changed_at as LastChangedAt,
         _Booking,
         _Travel,
         _Product,
