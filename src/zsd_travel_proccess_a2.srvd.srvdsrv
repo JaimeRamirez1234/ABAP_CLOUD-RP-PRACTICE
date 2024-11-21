@@ -1,0 +1,15 @@
+@EndUserText.label: 'Travel Procces'
+define service ZSD_TRAVEL_PROCCESS_A2 {
+  expose ZCD_C_TRAVEL_P_A2;
+  expose ZCD_C_BOOKING_P_A2;
+  expose zcd_c_booksuppl_p_a2;
+  expose /DMO/I_Supplement;
+  expose /DMO/I_SupplementText;
+  expose /DMO/I_Customer;
+  expose /DMO/I_Agency;
+  expose /DMO/I_Carrier;
+  expose /DMO/I_Connection;
+  expose /DMO/I_Flight;
+  expose I_Currency;
+  expose I_Country;
+}
