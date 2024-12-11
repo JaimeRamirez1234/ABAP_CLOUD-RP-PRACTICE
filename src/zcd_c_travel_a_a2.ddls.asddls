@@ -23,6 +23,9 @@ as projection on ZCD_I_TRAVEL_ALFA02
     CreatedAt,
     LastChangedBy,
     LastChangedAt,
+    @Semantics.amount.currencyCode: 'CurrencyCode'
+    @ObjectModel.virtualElementCalculatedBy: 'ABAP:ZCL_VIRT_ELEM_ALFA02'
+    virtual DiscountPrice : /dmo/total_price,
     /* Associations */
     _Agency,
     _Booking : redirected to composition child zcd_c_booking_a_a2,

@@ -54,4 +54,7 @@ annotate entity ZCD_C_TRAVEL_P_A2
     Description;
     @UI.hidden: true
     LastChangedAt;
+    @UI: { lineItem: [ { position: 50, importance: #HIGH } ] }
+    @EndUserText.label: 'Descuento 10%'
+    DiscountPrice;
 }
